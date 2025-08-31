@@ -1,0 +1,107 @@
+body {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.url-div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.url-div > div {
+    flex: 1 1 200px;
+    min-width: 200px;
+    max-width: 250px;
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.url-div > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.url1 {
+    background-color: #FF6B6B;
+}
+
+.url2 {
+    background-color: #4ECDC4;
+}
+
+.url3 {
+    background-color: #556270;
+}
+
+.url4 {
+    background-color: #C7F464;
+    color: #333;
+}
+
+.num {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+
+.text-url {
+    font-size: 1em;
+    margin: 10px 0;
+    min-height: 20px; 
+    word-wrap: break-word;
+}
+
+.submit-url, .listen {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.url1 .submit-url, .url1 .listen {
+    background-color: #ff4757;
+    color: white;
+}
+
+.url2 .submit-url, .url2 .listen  {
+    background-color: #1dd1a1;
+    color: white;
+}
+
+.url3 .submit-url, .url3 .listen {
+    background-color: #8395a7;
+    color: white;
+}
+
+.url4 .submit-url, .url4 .listen {
+    background-color: #a3cb38;
+    color: #333;
+}
+
+.submit-url:hover, .listen:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+@media (max-width: 1070px) {
+    .url-div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .url-div > div {
+        max-width: 90%;
+    }
+}

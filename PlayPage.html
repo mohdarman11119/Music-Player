@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="PlayPage.css">
+</head>
+<body>
+  <div class="play-music">
+      
+      <div class="img-cls">
+          <img class="" src="" alt="Album Cover">
+      </div>
+
+      <div class="play-line">
+          <progress value="0" max="120" id="progress-bar"></progress>
+      </div>
+
+      <div class="time-line">
+          <span class="dynamic-time">00:00</span>
+          <span class="static-time">00:00</span>
+      </div>
+
+      <div class="control-btn">
+          <button class="prev">⏮</button>
+          <button class="play-pause">▶</button>
+          <button class="next">⏭</button>
+      </div>
+  </div>
+
+    <audio id="myAudio" src=""></audio>
+    
+  <script src="PlayPage.js"></script>
+</body>
+</html>
